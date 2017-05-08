@@ -1,7 +1,7 @@
 int[][] b = new int[4][4], pp[] = new int[4][4][3]; //size(len,len) is better but js no support
 int f=4,pd=20,bs=100,len=pd*(f+1)+bs*f,sc=0,aS,aL=10,dead=1,w,h,bb=color(0),C=CENTER;
 
-void setup() { size(500,500); restart(); textFont(createFont("Courier",40)); noStroke(); }
+void setup() { size(600,600); restart(); textFont(createFont("Courier",40)); noStroke(); }
 
 void restart() 
 { b = new int[4][4]; 
@@ -11,7 +11,7 @@ w=width;
 h=height;
 }
 
-void spawn() 
+void spawn() //
 { ArrayList<Integer> xs = new ArrayList<Integer>(), ys = new ArrayList<Integer>();
   for(int j=0;j<f;j++) for(int i=0;i<f;i++) for(int k=0;k<1&&b[j][i]==0;k++,xs.add(i),ys.add(j)){}
   int r=(int)random(xs.size()),y=ys.get(r),x=xs.get(r),z=b[y][x]=random(-(pp[y][x][0]=-1))<.9?2:4;
