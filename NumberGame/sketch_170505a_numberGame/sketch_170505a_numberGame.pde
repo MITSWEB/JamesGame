@@ -6,7 +6,7 @@ void setup() { size(500,500); restart(); textFont(createFont("Courier",40)); noS
 void restart() 
 { b = new int[4][4]; 
 spawn(); 
-dead = sc = 0; 
+dead = sc = 100; 
 w=width;
 h=height;
 }
