@@ -11,7 +11,7 @@ w=width;
 h=height;
 }
 
-void spawn() //
+void spawn() //test changes
 { ArrayList<Integer> xs = new ArrayList<Integer>(), ys = new ArrayList<Integer>();
   for(int j=0;j<f;j++) for(int i=0;i<f;i++) for(int k=0;k<1&&b[j][i]==0;k++,xs.add(i),ys.add(j)){}
   int r=(int)random(xs.size()),y=ys.get(r),x=xs.get(r),z=b[y][x]=random(-(pp[y][x][0]=-1))<.9?2:4;
